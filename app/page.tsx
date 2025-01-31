@@ -3,6 +3,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  link: string;
+}
+
 const techLinks = {
   HTML: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   CSS: "https://developer.mozilla.org/en-US/docs/Web/CSS",
@@ -68,7 +74,7 @@ const projects = [
   },
 ];
 
-const ProjectCard = ({ title, description, link }) => (
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) => (
   <li className="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-all mb-6">
     <h3 className="text-xl font-semibold text-indigo-400">{title}</h3>
     <p className="text-gray-400 mt-2">{description}</p>
