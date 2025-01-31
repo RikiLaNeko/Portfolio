@@ -74,7 +74,11 @@ const projects = [
   },
 ];
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) => (
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  description,
+  link,
+}) => (
   <li className="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-all mb-6">
     <h3 className="text-xl font-semibold text-indigo-400">{title}</h3>
     <p className="text-gray-400 mt-2">{description}</p>
@@ -137,7 +141,8 @@ export default function Home() {
           Mes compétences couvrent le
           <strong>développement frontend et backend</strong>, la gestion de
           serveurs et quelques bases en cybersécurité. Je maîtrise des langages
-          comme <strong>Java, C, C++, Rust, JavaScript, TypeScript et C#</strong>,
+          comme{" "}
+          <strong>Java, C, C++, Rust, JavaScript, TypeScript et C#</strong>,
           ainsi que des frameworks tels que
           <strong>Spring, React, Next.js et ASP.Net</strong>.
         </p>
@@ -156,7 +161,9 @@ export default function Home() {
       </section>
 
       <section className="max-w-4xl mx-auto px-6 py-10">
-        <h2 className="text-3xl font-semibold border-b pb-2 mb-6">Compétences</h2>
+        <h2 className="text-3xl font-semibold border-b pb-2 mb-6">
+          Compétences
+        </h2>
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {Object.entries(techLinks).map(([tech, link]) => (
             <li
@@ -188,7 +195,8 @@ export default function Home() {
       <section className="max-w-4xl mx-auto px-6 py-10">
         <h2 className="text-3xl font-semibold border-b pb-2 mb-6">Contact</h2>
         <p>
-          Email: <a href="mailto:chloe.mortreux@proton.me" className="text-blue-400">
+          Email:{" "}
+          <a href="mailto:chloe.mortreux@proton.me" className="text-blue-400">
             chloe.mortreux@proton.me
           </a>
         </p>
@@ -210,4 +218,3 @@ export default function Home() {
     </div>
   );
 }
-
