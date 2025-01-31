@@ -34,25 +34,10 @@ const techLinks = {
   React: "https://reactjs.org/docs/",
   ".NET": "https://learn.microsoft.com/en-us/dotnet/",
   Vuejs: "https://vuejs.org/v2/guide/",
+  Svelte: "https://svelte.dev/docs",
 };
 
 const projects = [
-  {
-    title: "Projet 1",
-    description: "Analyse et conception d'une application",
-  },
-  {
-    title: "Projet 2",
-    description: "Développement Back avec Spring",
-  },
-  {
-    title: "Projet 3",
-    description: "Développement Front avec Angular",
-  },
-  {
-    title: "Projet 4",
-    description: "Mise en place des composants NoSQL",
-  },
   {
     title: "NixPKGManager",
     description: "Gestionnaire de paquets pour NixOS codé en Rust",
@@ -115,6 +100,11 @@ export default function Home() {
       </Head>
 
       <header className="py-6 text-center">
+        <img
+          src="/photo/Photo.jpg"
+          alt="Chloé Mortreux"
+          className="w-32 h-32 rounded-full mx-auto"
+        />
         <h1 className="text-4xl font-bold text-indigo-500">Chloé Mortreux</h1>
         <p className="text-lg text-gray-400">
           Concepteur Développeur Full Stack - Java
