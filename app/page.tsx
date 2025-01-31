@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const techLinks = {
@@ -67,15 +68,7 @@ const projects = [
   },
 ];
 
-const ProjectCard = ({
-  title,
-  description,
-  link,
-}: {
-  title: string;
-  description: string;
-  link?: string;
-}) => (
+const ProjectCard = ({ title, description, link }) => (
   <li className="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-all mb-6">
     <h3 className="text-xl font-semibold text-indigo-400">{title}</h3>
     <p className="text-gray-400 mt-2">{description}</p>
@@ -100,9 +93,11 @@ export default function Home() {
       </Head>
 
       <header className="py-6 text-center">
-        <img
+        <Image
           src="/photo/Photo.jpg"
           alt="Chloé Mortreux"
+          width={128}
+          height={128}
           className="w-32 h-32 rounded-full mx-auto"
         />
         <h1 className="text-4xl font-bold text-indigo-500">Chloé Mortreux</h1>
@@ -116,51 +111,46 @@ export default function Home() {
         <p>
           <strong>Passion pour le développement</strong>
           <br />
-          Depuis toujours, je suis passionnée par l'informatique et le
+          Depuis toujours, je suis passionnée par l&apos;informatique et le
           développement. J’aime explorer de nouvelles technologies et relever
           des défis techniques, que ce soit en programmation système,
-          développement web ou encore en création d'outils pour optimiser mon
-          environnement de travail.
+          développement web ou encore en création d&apos;outils pour optimiser
+          mon environnement de travail.
         </p>
         <br />
         <p>
           <strong>Expérience et compétences</strong>
           <br />
-          J'ai travaillé sur divers projets personnels et exploré plusieurs
+          J&apos;ai travaillé sur divers projets personnels et exploré plusieurs
           langages et frameworks. J’ai notamment conçu <strong>NekoLang</strong>
           , un langage de programmation inspiré de mon amour des chats et des
           langages interprétés.
         </p>
         <br />
         <p>
-          Mes compétences couvrent le{" "}
+          Mes compétences couvrent le
           <strong>développement frontend et backend</strong>, la gestion de
           serveurs et quelques bases en cybersécurité. Je maîtrise des langages
-          comme{" "}
-          <strong>Java, C, C++, Rust, JavaScript, TypeScript et C#</strong>,
-          ainsi que des frameworks tels que{" "}
+          comme <strong>Java, C, C++, Rust, JavaScript, TypeScript et C#</strong>,
+          ainsi que des frameworks tels que
           <strong>Spring, React, Next.js et ASP.Net</strong>.
         </p>
         <br />
         <p>
           <strong>Objectif professionnel</strong>
           <br />
-          Actuellement en formation pour un{" "}
-          <strong>
-            titre RNCP Niveau 6 en développement Full Stack Java
-          </strong>{" "}
-          chez <strong>DIGINAMIC</strong>, je recherche une{" "}
+          Actuellement en formation pour un
+          <strong>titre RNCP Niveau 6 en développement Full Stack Java</strong>
+          chez <strong>DIGINAMIC</strong>, je recherche une
           <strong>alternance à partir de février 2025</strong>. Mon objectif est
-          d'intégrer une entreprise où je pourrai mettre à profit mes
-          compétences tout en continuant à évoluer en tant que{" "}
+          d&apos;intégrer une entreprise où je pourrai mettre à profit mes
+          compétences tout en continuant à évoluer en tant que
           <strong>Conceptrice Développeuse Full Stack</strong>.
         </p>
       </section>
 
       <section className="max-w-4xl mx-auto px-6 py-10">
-        <h2 className="text-3xl font-semibold border-b pb-2 mb-6">
-          Compétences
-        </h2>
+        <h2 className="text-3xl font-semibold border-b pb-2 mb-6">Compétences</h2>
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {Object.entries(techLinks).map(([tech, link]) => (
             <li
@@ -192,8 +182,7 @@ export default function Home() {
       <section className="max-w-4xl mx-auto px-6 py-10">
         <h2 className="text-3xl font-semibold border-b pb-2 mb-6">Contact</h2>
         <p>
-          Email:{" "}
-          <a href="mailto:chloe.mortreux@proton.me" className="text-blue-400">
+          Email: <a href="mailto:chloe.mortreux@proton.me" className="text-blue-400">
             chloe.mortreux@proton.me
           </a>
         </p>
@@ -215,3 +204,4 @@ export default function Home() {
     </div>
   );
 }
+
