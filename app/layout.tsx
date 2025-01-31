@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Chloé Mortreux - Portfolio",
-  description: "Portfolio de Chloé Mortreux, Concepteur Développeur Full Stack - Java",
+  description:
+    "Portfolio de Chloé Mortreux, Concepteur Développeur Full Stack - Java",
 };
 
 export default function RootLayout({
