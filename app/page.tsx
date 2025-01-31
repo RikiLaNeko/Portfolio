@@ -74,7 +74,38 @@ const projects = [
     description: "SQlite Clone est un clone de SQlite codé en C",
     link: "https://github.com/RikiLaNeko/sqlite_clone",
   },
+  {
+    title: "Dockerwebui",
+    description:
+      "Interface web pour Docker codée en Go pour le backend et VueJS pour le frontend",
+    link: "https://github.com/RikiLaNeko/dockerwebui",
+  },
 ];
+
+const ProjectCard = ({
+  title,
+  description,
+  link,
+}: {
+  title: string;
+  description: string;
+  link?: string;
+}) => (
+  <li className="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-all mb-6">
+    <h3 className="text-xl font-semibold text-indigo-400">{title}</h3>
+    <p className="text-gray-400 mt-2">{description}</p>
+    {link && (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-400 hover:text-blue-300 mt-4 inline-block"
+      >
+        Voir sur GitHub
+      </a>
+    )}
+  </li>
+);
 
 export default function Home() {
   return (
@@ -120,16 +151,13 @@ export default function Home() {
       <section className="max-w-4xl mx-auto px-6 py-10">
         <h2 className="text-3xl font-semibold border-b pb-2 mb-6">Projets</h2>
         <ul>
-          {projects.map(({ title, description, link, language }) => (
-            <li
+          {projects.map(({ title, description, link }) => (
+            <ProjectCard
               key={title}
-              className="bg-gray-800 p-3 rounded-lg text-center hover:bg-gray-700 transition-all"
-            >
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                {title}
-              </a>
-              <p>{description}</p>
-            </li>
+              title={title}
+              description={description}
+              link={link}
+            />
           ))}
         </ul>
       </section>
@@ -153,7 +181,6 @@ export default function Home() {
             <FaGithub />
           </a>
           <a href="#" className="text-gray-400 text-2xl hover:text-white">
-            {/* Ajouter le lien LinkedIn */}
             <FaLinkedin />
           </a>
         </div>
