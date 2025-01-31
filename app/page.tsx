@@ -114,9 +114,46 @@ export default function Home() {
       <section className="max-w-4xl mx-auto px-6 py-10">
         <h2 className="text-3xl font-semibold border-b pb-2 mb-6">À propos</h2>
         <p>
-          Étudiante chez DIGINAMIC, je prépare un titre RNCP Niveau 6 en
-          développement Full Stack Java. Je suis à la recherche d’un contrat
-          d’alternance à partir de février 2025.
+          <strong>Passion pour le développement</strong>
+          <br />
+          Depuis toujours, je suis passionnée par l'informatique et le
+          développement. J’aime explorer de nouvelles technologies et relever
+          des défis techniques, que ce soit en programmation système,
+          développement web ou encore en création d'outils pour optimiser mon
+          environnement de travail.
+        </p>
+        <br />
+        <p>
+          <strong>Expérience et compétences</strong>
+          <br />
+          J'ai travaillé sur divers projets personnels et exploré plusieurs
+          langages et frameworks. J’ai notamment conçu <strong>NekoLang</strong>
+          , un langage de programmation inspiré de mon amour des chats et des
+          langages interprétés.
+        </p>
+        <br />
+        <p>
+          Mes compétences couvrent le{" "}
+          <strong>développement frontend et backend</strong>, la gestion de
+          serveurs et quelques bases en cybersécurité. Je maîtrise des langages
+          comme{" "}
+          <strong>Java, C, C++, Rust, JavaScript, TypeScript et C#</strong>,
+          ainsi que des frameworks tels que{" "}
+          <strong>Spring, React, Next.js et ASP.Net</strong>.
+        </p>
+        <br />
+        <p>
+          <strong>Objectif professionnel</strong>
+          <br />
+          Actuellement en formation pour un{" "}
+          <strong>
+            titre RNCP Niveau 6 en développement Full Stack Java
+          </strong>{" "}
+          chez <strong>DIGINAMIC</strong>, je recherche une{" "}
+          <strong>alternance à partir de février 2025</strong>. Mon objectif est
+          d'intégrer une entreprise où je pourrai mettre à profit mes
+          compétences tout en continuant à évoluer en tant que{" "}
+          <strong>Conceptrice Développeuse Full Stack</strong>.
         </p>
       </section>
 
