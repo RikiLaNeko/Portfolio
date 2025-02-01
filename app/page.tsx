@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 interface ProjectCardProps {
   title: string;
   description: string;
-  link: string;
+  link: string | null | undefined;
 }
 
 const techLinks = {
@@ -76,6 +76,11 @@ const projects = [
     description:
       "Interface web pour Docker codée en Go pour le backend et VueJS pour le frontend",
     link: "https://github.com/RikiLaNeko/dockerwebui",
+  },
+  {
+    title: "Suffragium",
+    description:
+      "Dans le cadre de mon projet de 2ème année de BTS SNIR, j\'ai travaillé avec la SEBA sur Suffragium, visant à numériser et sécuriser le processus de vote. J\'ai principalement développé le backend en Express, utilisé MySQL pour la base de données et assuré la sécurisation des données via le cryptage HMAC-SHA512.",
   },
 ];
 
@@ -201,7 +206,7 @@ export default function Home() {
               key={title}
               title={title}
               description={description}
-              link={link}
+              link={link ?? null}
             />
           ))}
         </ul>
@@ -231,11 +236,7 @@ export default function Home() {
           >
             <FaLinkedin />
           </a>
-          <a
-            href="/docs/CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="/docs/CV.pdf" target="_blank" rel="noopener noreferrer">
             Télécharger mon CV
           </a>
         </div>
