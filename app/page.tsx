@@ -46,6 +46,11 @@ const techLinks = {
 
 const projects = [
   {
+    title: "Portfolio",
+    description: "Portfolio codé en Next.js, TypeScript et TailwindCSS",
+    link: "https://github.com/RikiLaNeko/Portfolio",
+  },
+  {
     title: "NixPKGManager",
     description: "Gestionnaire de paquets pour NixOS codé en Rust",
     link: "https://github.com/RikiLaNeko/NixPKGManager",
