@@ -138,24 +138,34 @@ export default function Home() {
         </p>
         <br />
         <p>
-          Mes compétences couvrent le
+          Mes compétences couvrent le{" "}
           <strong>développement frontend et backend</strong>, la gestion de
           serveurs et quelques bases en cybersécurité. Je maîtrise des langages
           comme{" "}
           <strong>Java, C, C++, Rust, JavaScript, TypeScript et C#</strong>,
-          ainsi que des frameworks tels que
+          ainsi que des frameworks tels que{" "}
           <strong>Spring, React, Next.js et ASP.Net</strong>.
+        </p>
+        <br />
+        <p>
+          <strong>Diplômes</strong>
+          <br />
+          BTS SN (Systèmes Numériques) option IR (Informatique et Réseaux) -
+          2021 - 2024 - Lycée Polyvalent Astier - Aubenas (07)
+          <br />
+          Bac STI2D option SIN (Système d&#39;Information et Numérique) - 2019 -
+          2021 - Lycée Polyvalent Astier - Aubenas (07) - mention Bien
         </p>
         <br />
         <p>
           <strong>Objectif professionnel</strong>
           <br />
-          Actuellement en formation pour un
+          Actuellement en formation pour un{" "}
           <strong>titre RNCP Niveau 6 en développement Full Stack Java</strong>
-          chez <strong>DIGINAMIC</strong>, je recherche une
+          chez <strong>DIGINAMIC</strong>, je recherche une{" "}
           <strong>alternance à partir de février 2025</strong>. Mon objectif est
           d&apos;intégrer une entreprise où je pourrai mettre à profit mes
-          compétences tout en continuant à évoluer en tant que
+          compétences tout en continuant à évoluer en tant que{" "}
           <strong>Conceptrice Développeuse Full Stack</strong>.
         </p>
       </section>
@@ -210,8 +220,19 @@ export default function Home() {
           >
             <FaGithub />
           </a>
-          <a href="#" className="text-gray-400 text-2xl hover:text-white">
+          <a
+            href="https://www.linkedin.com/in/chloemortreux/"
+            className="text-gray-400 text-2xl hover:text-white"
+          >
             <FaLinkedin />
+          </a>
+          <a
+            href="/docs/CV.pdf"
+            alt="alt text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Télécharger mon CV
           </a>
         </div>
       </section>
