@@ -228,7 +228,6 @@ export default function Home() {
           </a>
           <a
             href="/docs/CV.pdf"
-            alt="alt text"
             target="_blank"
             rel="noopener noreferrer"
           >
